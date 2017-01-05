@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2017 at 03:56 AM
+-- Generation Time: Jan 05, 2017 at 05:21 AM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -37,14 +37,17 @@ CREATE TABLE IF NOT EXISTS `barang` (
   `no_eksport` varchar(30) DEFAULT NULL,
   `harga` varchar(20) NOT NULL,
   `jml_awal_item` varchar(20) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `barang`
 --
 
 INSERT INTO `barang` (`id`, `nama`, `merk`, `asal_brg`, `perusahaan_import`, `perusahaan_eksport`, `no_import`, `no_eksport`, `harga`, `jml_awal_item`) VALUES
-(1, 'superpell', 'wings', 'china', 'PT. LUCU', 'PT. ANDRO', 'S1230975', 'E0927438', '80000', '7500');
+(2, 'Televisi', 'Samsung', 'Jepang', 'PT. Samsung', 'PT. Cahaya Elektronik', 'I329381-09', 'E12492-08', '2150000', '9000'),
+(3, 'Laptop', 'ASUS', 'Jepang', 'PT. ASUS TECH', 'PT. IKA', 'I2938290-02', 'E939283-90', '7000000', '7000'),
+(4, 'Handphone', 'Oppo', 'China', 'PT. OPPO', '-', 'I9382938-21', '-', '2100000', '9200'),
+(5, 'Headset', 'Sony', 'Jepang', 'PT. REP GAMING', 'PT. IKA', 'I329382-00', 'E394029-00', '400000', '7000');
 
 -- --------------------------------------------------------
 
@@ -65,7 +68,7 @@ INSERT INTO `login` (`username`, `password`) VALUES
 ('admin', 'admin'),
 ('fathoni', 'k3515020'),
 ('firman', 'k3515024'),
-('leonardo', 'K3515030'),
+('leonardo', 'k3515030'),
 ('novita', 'k3515042');
 
 --
@@ -92,7 +95,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `barang`
 --
 ALTER TABLE `barang`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
